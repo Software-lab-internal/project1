@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="login.css">
   </head>
   <body>
-   <script>
-    function data()
-    {
-    var a=document.getElementById("n1").value;
-    var b=document.getElementById("n2").value;
-    if(a==""||b=="||"")
-    {
-        alert("All feilds are compulsary to fill");
-    }
-    }
-   </script>
+
+   
     <form onsubmit="data()">
     <div id="signInBorder">
       <p id="SignInTxt">
@@ -40,7 +31,7 @@
       </label>
 
       <div>
-        <button id="amazon">Sign in</button>
+        <button id="amazon"><a href="amazon.html">Sign in</a></button>
       </div>
 
       <div id="createAccount">
@@ -63,6 +54,16 @@
     </p>
   </div>
 </form>
-
+<script>
+function data()
+    {
+    var a=document.getElementById("n1").value;
+    var b=document.getElementById("n2").value;
+    if(a==""||b=="")
+    {
+        alert("All feilds are compulsary to fill");
+    }
+    }
+   </script>
   </body>
 </html>
